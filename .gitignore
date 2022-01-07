@@ -12,3 +12,5 @@
 *.sln
 *.pdb
 *.csproj.user
+/packages
+/packages.config
