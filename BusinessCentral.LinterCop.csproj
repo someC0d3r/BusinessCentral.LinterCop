@@ -38,24 +38,23 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.Dynamics.Nav.CodeCop">
-      <HintPath>..\..\..\..\..\.vscode\extensions\ms-dynamics-smb.al-8.2.552672\bin\Analyzers\Microsoft.Dynamics.Nav.CodeCop.dll</HintPath>
+    <Reference Include="Microsoft.CodeAnalysis">
+      <HintPath>ms-dynamics-smb.al-latest\Microsoft.CodeAnalysis.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Dynamics.Nav.CodeAnalysis">
+      <HintPath>ms-dynamics-smb.al-latest\Microsoft.Dynamics.Nav.CodeAnalysis.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Dynamics.Nav.CodeAnalysis.Workspaces">
+      <HintPath>ms-dynamics-smb.al-latest\Microsoft.Dynamics.Nav.CodeAnalysis.Workspaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="netstandard" />
-    <Reference Include="Microsoft.CodeAnalysis">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\.vscode\extensions\ms-dynamics-smb.al-8.2.552672\bin\Analyzers\Microsoft.CodeAnalysis.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Microsoft.Dynamics.Nav.CodeAnalysis">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\.vscode\extensions\ms-dynamics-smb.al-8.2.552672\bin\Analyzers\Microsoft.Dynamics.Nav.CodeAnalysis.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Microsoft.Dynamics.Nav.Analyzers.Common">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>ms-dynamics-smb.al-latest/extension/bin/Analyzers/Microsoft.Dynamics.Nav.Analyzers.Common.dll</HintPath>
+      <HintPath>ms-dynamics-smb.al-latest\Microsoft.Dynamics.Nav.Analyzers.Common.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System.Collections.Immutable, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
@@ -98,6 +97,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="ms-dynamics-smb.al-latest\" />
     <Folder Include="Properties\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
