@@ -20,8 +20,8 @@ namespace BusinessCentral.LinterCop.Design
                 SyntaxKind.ObjectReference,
                 SyntaxKind.PermissionValue
             });
-
         }
+
         private void CheckForObjectIDsInVariablesOrProperties(SyntaxNodeAnalysisContext ctx)
         {
             if (ctx.ContainingSymbol.IsObsoletePending || ctx.ContainingSymbol.IsObsoleteRemoved) return;
