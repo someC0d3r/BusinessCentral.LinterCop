@@ -38,28 +38,35 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.CodeAnalysis">
-      <HintPath>ms-dynamics-smb.al-latest\Microsoft.CodeAnalysis.dll</HintPath>
+    <Reference Include="Microsoft.CodeAnalysis, Version=2.9.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>ms-dynamics-smb.al-latest\extension\bin\Analyzers\Microsoft.CodeAnalysis.dll</HintPath>
+      <Private>False</Private>
     </Reference>
-    <Reference Include="Microsoft.Dynamics.Nav.CodeAnalysis">
-      <HintPath>ms-dynamics-smb.al-latest\Microsoft.Dynamics.Nav.CodeAnalysis.dll</HintPath>
+    <Reference Include="Microsoft.Dynamics.Nav.Analyzers.Common">
+      <HintPath>ms-dynamics-smb.al-latest\extension\bin\Analyzers\Microsoft.Dynamics.Nav.Analyzers.Common.dll</HintPath>
+      <Private>False</Private>
     </Reference>
-    <Reference Include="Microsoft.Dynamics.Nav.CodeAnalysis.Workspaces">
-      <HintPath>ms-dynamics-smb.al-latest\Microsoft.Dynamics.Nav.CodeAnalysis.Workspaces.dll</HintPath>
+    <Reference Include="Microsoft.Dynamics.Nav.CodeAnalysis, Version=7.4.7.43721, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>ms-dynamics-smb.al-latest\extension\bin\Analyzers\Microsoft.Dynamics.Nav.CodeAnalysis.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Dynamics.Nav.CodeAnalysis.Workspaces, Version=7.4.7.43721, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>ms-dynamics-smb.al-latest\extension\bin\Analyzers\Microsoft.Dynamics.Nav.CodeAnalysis.Workspaces.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>ms-dynamics-smb.al-latest\extension\bin\Analyzers\Newtonsoft.Json.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="netstandard" />
-    <Reference Include="Microsoft.Dynamics.Nav.Analyzers.Common">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>ms-dynamics-smb.al-latest\Microsoft.Dynamics.Nav.Analyzers.Common.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="System.Collections.Immutable, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>ms-dynamics-smb.al-latest/extension/bin/Analyzers/System.Collections.Immutable.dll</HintPath>
+      <HintPath>ms-dynamics-smb.al-latest\extension\bin\Analyzers\System.Collections.Immutable.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System.ComponentModel.Composition" />
@@ -81,6 +88,7 @@
     <Compile Include="Design\Rule0013CheckForNotBlankOnSingleFieldPrimaryKeys.cs" />
     <Compile Include="Design\Rule0014PermissionSetCaptionLength.cs" />
     <Compile Include="Design\Rule0015PermissionSetCoverage.cs" />
+    <Compile Include="Helpers\Debug.cs" />
     <Compile Include="Helpers\LinterSettings.cs" />
     <Compile Include="LinterCopAnalyzers.Designer.cs" />
     <Compile Include="LinterCopAnalyzers.Generated.cs" />
