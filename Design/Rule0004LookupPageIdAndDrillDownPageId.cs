@@ -30,7 +30,7 @@ namespace BusinessCentral.LinterCop.Design
             if (!IsSymbolAccessible(table)) return;
             if (table.TableType == TableTypeKind.Temporary) return;
 
-            bool exists = table.Properties.Where(e => e.PropertyKind == PropertyKind.DrillDownPageId || e.PropertyKind == PropertyKind.LookupPageId).Count() == 2;
+            bool exists = table.Properties.Where(e => e.PropertyKind == PropertyKind.DrillDownPageId || e.PropertyKind == PropertyKind.LookupPageId).Count() >= 1;
             if (exists) return;
 
             context.ReportDiagnostic(
