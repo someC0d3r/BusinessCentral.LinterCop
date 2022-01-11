@@ -1,6 +1,5 @@
 ﻿using System.Reflection;
 using System.Resources;
-using System.Runtime.CompilerServices;
 
 //[assembly: Extension]
 [assembly: NeutralResourcesLanguage("en-US")]
