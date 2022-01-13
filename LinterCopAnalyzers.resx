@@ -246,4 +246,13 @@
   <data name="Rule0015PermissionSetCoverageTitle" xml:space="preserve">
     <value>All application objects should be covered by at least one permission set in the extension.</value>
   </data>
+  <data name="Rule0016PragmaWarningDisableMustBeExplainedByCommentDescription" xml:space="preserve">
+    <value>The usage of "pragma disable" should be explained by a leading or trailing comment.</value>
+  </data>
+  <data name="Rule0016PragmaWarningDisableMustBeExplainedByCommentFormat" xml:space="preserve">
+    <value>The usage of "pragma disable" should be explained by a leading or trailing comment.</value>
+  </data>
+  <data name="Rule0016PragmaWarningDisableMustBeExplainedByCommentTitle" xml:space="preserve">
+    <value>The usage of "pragma disable" should be explained by a leading or trailing comment.</value>
+  </data>
 </root>
