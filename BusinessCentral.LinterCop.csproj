@@ -21,6 +21,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>portable</DebugType>
     <Optimize>false</Optimize>
+    <DebugType>portable</DebugType>
     <OutputPath>bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
@@ -88,7 +89,11 @@
     <Compile Include="Design\Rule0013CheckForNotBlankOnSingleFieldPrimaryKeys.cs" />
     <Compile Include="Design\Rule0014PermissionSetCaptionLength.cs" />
     <Compile Include="Design\Rule0015PermissionSetCoverage.cs" />
-    <Compile Include="Design\Rule0016PragmaWarningDisableMustBeExplainedByComment.cs" />
+    <Compile Include="Design\Rule0016CheckForMissingCaptions.cs" />
+    <Compile Include="Design\Rule0017WriteToFlowField.cs" />
+    <Compile Include="Design\Rule0018NoEventsInInternalCodeunits.cs" />
+    <Compile Include="Design\Rule0019DataClassificationFieldEqualsTable.cs" />
+    <Compile Include="Design\Rule0020ApplicationAreaEqualsToPage.cs" />
     <Compile Include="Helpers\LinterSettings.cs" />
     <Compile Include="LinterCopAnalyzers.Designer.cs" />
     <Compile Include="LinterCopAnalyzers.Generated.cs" />

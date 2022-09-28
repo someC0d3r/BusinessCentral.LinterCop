@@ -1,6 +1,6 @@
 /.vs
 /bin
-/ms-dynamics-smb.al-latest
+/ms-dynamics-smb.al-latest*
 /obj
 .vscode/
 *.sln
